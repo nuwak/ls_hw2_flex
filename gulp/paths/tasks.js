@@ -1,16 +1,19 @@
 'use strict';
+var config = require('../config');
 
 module.exports = [
-  './gulp/tasks/sass.js',
-  './gulp/tasks/serve.js',
-  './gulp/tasks/pug.js',
-  './gulp/tasks/watch.js',
-  './gulp/tasks/clean.js',
-  './gulp/tasks/js.foundation.js',
-  './gulp/tasks/css.foundation.js',
-  './gulp/tasks/js.process.js',
-  './gulp/tasks/js.lint.js',
-  './gulp/tasks/copy.image.js',
-  './gulp/tasks/sprite.svg.js'
+  config.task + 'sass.js',
+  config.task + 'serve.js',
+  config.task + 'pug.js',
+  config.task + 'watch.js',
+  config.task + 'clean.js',
+  config.task + 'js.foundation.js',
+  config.task + 'css.foundation.js',
+  config.task + 'js.process.js',
+  config.task + 'js.lint.js',
+  config.task + 'copy.image.js',
+  config.task + 'copy.fonts.js',
+  config.task + 'sprite.svg.js',
+  config.task + 'sprite.png.js'
 ];
 
