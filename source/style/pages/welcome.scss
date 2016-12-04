@@ -1,0 +1,138 @@
+
+.welcome{
+  background-color: #fff;
+  opacity: 0.8;
+  float: none;
+  margin: 140px auto 0 auto;
+  border-radius: 5px;
+  text-align: center;
+  padding-top:40px;
+
+  &__h1{
+    color: #455a64;
+    font-size:28px;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+
+  &__content p{
+    color: #455a64;
+    font-size: 16px;
+    font-weight:400;
+    margin-top: 10px;
+  }
+
+  &__face{
+    border-radius: 50%;
+  }
+}
+
+$footer_height: 60px;
+.footer{
+  height: $footer_height;
+  margin-top: -$footer_height;
+  color: #d8dde3;
+  text-align: center;
+  position: relative;
+}
+
+.wrapper{
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+  &__empty{
+    height: $footer_height;
+  }
+}
+
+.login{
+  float: right;
+  padding-right: 100px;
+  padding-top: 20px;
+
+  &__link{
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    padding: 10px 25px;
+    font-weight:900;
+
+    &:hover{
+      background-color: #fff;
+      color: #00bfa5;
+    }
+  }
+}
+
+.welcome__icons{
+  padding: 0;
+  margin: 10px auto 30px auto;
+  display: inline-block;
+  list-style:none;
+  @include clearfix;
+  li{
+    float: left;
+    width: 32px+25px;
+    padding-right: 25px;
+    &:last-child{
+      padding-right: 0;
+      width: 32px;
+    }
+    a{
+      float: left;
+      display: inline-block;
+
+      svg {
+        line-height: 2rem;
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        vertical-align: middle;
+        fill: #00bfa5;
+        fill-opacity: .5;
+      }
+
+      &:hover svg{
+        fill-opacity: 1;
+      }
+    }
+  }
+}
+
+.welcome__menu{
+  ul{
+    padding:0;
+    list-style:none;
+    width: 100%;
+    display: table;
+    @include clearfix;
+
+    li{
+      display: table-cell;
+      height: 45px;
+
+      a{
+        border-right:2px solid #dee3e7;
+        background-color: #00bfa5;
+        display: block;
+        padding: 15px 30px;
+        color: #ffffff;
+        text-decoration: none;
+        &:hover{
+          background-color: #009688;
+        }
+      }
+      &:last-child a{
+        border: 0;
+        border-radius: 0 0 5px 0;
+      }
+
+      &:first-child a{
+        border-radius: 0 0 0 5px;
+      }
+
+    }
+  }
+}

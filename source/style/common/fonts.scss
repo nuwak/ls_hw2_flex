@@ -1,0 +1,20 @@
+$fonts_path: '/assets/fonts/';
+$fonts: (
+        Regular 400 normal,
+        Bold 700 normal,
+        BoldItalic 700 italic,
+        Italic 400 italic,
+        Light 300 normal,
+        LightItalic 300 italic,
+        Medium 500 normal,
+        MediumItalic 500 italic,
+);
+
+@each $font in $fonts{
+  @font-face {
+    font-family: 'Roboto';
+    src: url($fonts_path + 'Roboto-'+ nth($font,1) +'.ttf') format('truetype');
+    font-weight: nth($font,2);
+    font-style: nth($font,3);
+  }
+}

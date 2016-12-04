@@ -1,4 +1,17 @@
+.login
+    a.login__link(href='#') Авторизироваться
 .container
-    .welcome
-        h1 Игорь Боженников
-    img(src="/assets/img/sprite.svg")
+    .welcome.cols.col-4
+        img.welcome__face(src="/assets/img/face.jpg")
+        h1.welcome__h1 Игорь Боженников
+        .welcome__content
+            p Личный сайт веб разрабодчика
+            ul.welcome__icons
+                each $url, $icon in {'vk':'https://vk.com/mr23423412', 'github':'https://github.com/nuwak', 'in': '123'}
+                    li: a(href=$url target='_blank')
+                        svg(class='welcome__icon--' + $icon)
+                            use(xlink:href="/assets/img/sprite.svg#" + $icon)
+
+            nav.welcome__menu: ul
+                each $url, $name in {'Мои работы' : '1', "Обо мне" : "2", "Блог" : '3'}
+                    li: a(href=$url)=$name

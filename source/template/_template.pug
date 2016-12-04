@@ -14,9 +14,10 @@ html
     //- favicon block start
     //- favicon block end
 
-    link(rel='stylesheet' href='/assets/css/foundation.css')
+    //link(rel='stylesheet' href='/assets/css/foundation.css')
+    link(rel='stylesheet' href='/assets/css/normalize.css')
     link(rel='stylesheet' href='/assets/css/app.css')
-    script(src='/assets/js/foundation.js' defer)
+    //script(src='/assets/js/foundation.js' defer)
     script(src='/assets/js/app.js' defer)
 
     <!--[if lt IE 9]>
@@ -24,4 +25,8 @@ html
     <![endif]-->
 
   body
-    block content
+    //itodo: подключить скрипт для поддержки подключения svg в ie
+    .wrapper
+      block content
+      .wrapper__empty
+    footer.footer &copy; Боженников Игорь 2016

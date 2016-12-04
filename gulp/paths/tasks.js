@@ -13,6 +13,7 @@ module.exports = [
   config.task + 'js.lint.js',
   config.task + 'copy.image.js',
   config.task + 'copy.fonts.js',
+  config.task + 'copy.css.js',
   config.task + 'sprite.svg.js',
   config.task + 'sprite.png.js'
 ];
