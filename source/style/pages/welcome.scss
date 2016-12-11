@@ -48,10 +48,9 @@
   width: 100%;
 }
 
-$footer_height: 60px;
 .footer{
-  height: $footer_height;
-  margin-top: -$footer_height;
+  height: 70px;
+  line-height:60px;
   color: #d8dde3;
   text-align: center;
   position: relative;
