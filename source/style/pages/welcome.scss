@@ -70,10 +70,14 @@ $footer_height: 60px;
   width: 100%;
   display: flex;
   flex-flow: row;
-  align-items: flex-start;
   justify-content: flex-end;
   padding-right: 100px;
   padding-top: 20px;
+
+  @include phones{
+    justify-content: center;
+    padding-right: 0;
+  }
 
   &__link{
     color: #ffffff;
