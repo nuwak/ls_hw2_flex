@@ -18,7 +18,7 @@
   width: 1200px;
   margin: 0 auto;
   clear: both;
-  height: 100%;
+  flex:1;
 
   @include clearfix;
 }

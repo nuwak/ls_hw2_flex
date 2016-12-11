@@ -2,10 +2,12 @@
 .window{
   background-color: #fff;
   opacity: 0.8;
-  float: none;
-  margin: 140px auto 0 auto;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  margin-top: 140px;
   border-radius: 5px;
-  text-align: center;
+  width: 400px;
   padding-top:40px;
   position: relative;
 
@@ -38,11 +40,6 @@
   width: 100%;
 }
 
-.wrap-center{
-  display: inline-block;
-  margin: 0 auto;
-}
-
 $footer_height: 60px;
 .footer{
   height: $footer_height;
@@ -56,13 +53,17 @@ $footer_height: 60px;
   min-height: 100%;
   overflow: hidden;
   position: relative;
-  &__empty{
-    height: $footer_height;
-  }
+  flex-direction: column;
+  display: flex;
+  align-items: center;
 }
 
 .login{
-  float: right;
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  align-items: flex-start;
+  justify-content: flex-end;
   padding-right: 100px;
   padding-top: 20px;
 
@@ -85,24 +86,17 @@ $footer_height: 60px;
 .center-menu{
   padding: 0;
   margin: 10px auto 30px auto;
-  display: inline-block;
+  display: flex;
   list-style:none;
-  @include clearfix;
 }
 
 .center-menu__item{
-  float: left;
   width: 32px+25px;
   padding-right: 25px;
   &:last-child{
     padding-right: 0;
     width: 32px;
   }
-}
-
-.center-menu__link{
-  float: left;
-  display: inline-block;
 }
 
 .social-icon{
@@ -153,4 +147,12 @@ $footer_height: 60px;
     }
 
   }
+}
+
+.container {
+  display: flex;
+  width: 1200px;
+  flex-grow:1;
+  justify-content: center;
+  align-items: flex-start;
 }
