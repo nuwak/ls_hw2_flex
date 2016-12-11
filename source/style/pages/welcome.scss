@@ -8,6 +8,10 @@
   margin-top: 140px;
   border-radius: 5px;
   width: 400px;
+  @include tablet{
+    width: 348px;
+  }
+
   padding-top:40px;
   position: relative;
 
@@ -56,6 +60,7 @@ $footer_height: 60px;
   flex-direction: column;
   display: flex;
   align-items: center;
+  //justify-content: flex-end;
 }
 
 .login{
@@ -130,7 +135,9 @@ $footer_height: 60px;
       border-right:2px solid #dee3e7;
       background-color: #00bfa5;
       display: block;
-      padding: 15px 30px;
+      height:100%;
+      line-height:48px;
+      text-align: center;
       color: #ffffff;
       text-decoration: none;
       &:hover{
@@ -147,12 +154,4 @@ $footer_height: 60px;
     }
 
   }
-}
-
-.container {
-  display: flex;
-  width: 1200px;
-  flex-grow:1;
-  justify-content: center;
-  align-items: flex-start;
 }

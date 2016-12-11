@@ -12,13 +12,3 @@
     }
   }
 }
-
-.container {
-  display: block;
-  width: 1200px;
-  margin: 0 auto;
-  clear: both;
-  flex:1;
-
-  @include clearfix;
-}
