@@ -13,5 +13,5 @@
                         use(xlink:href="/assets/img/sprite.svg#" + $icon)
 
         ul.wide-menu
-            each $url, $name in {'Мои работы' : '1', "Обо мне" : "2", "Блог" : '3'}
+            each $url, $name in {'Мои работы' : '1', "Обо мне" : "/about.html", "Блог" : '3'}
                 li.wide-menu__item: a.wide-menu__link(href=$url)=$name

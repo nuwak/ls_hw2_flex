@@ -32,8 +32,6 @@
     font-weight:400;
     margin-top: 10px;
   }
-
-  @include clearfix;
 }
 
 .avatar-box{
@@ -54,15 +52,6 @@
   color: #d8dde3;
   text-align: center;
   position: relative;
-}
-
-.wrapper{
-  min-height: 100%;
-  overflow: hidden;
-  position: relative;
-  flex-direction: column;
-  display: flex;
-  align-items: center;
 }
 
 .login{
@@ -135,6 +124,7 @@
 
   .wide-menu__item{
     flex:1 1 auto;
+    flex-grow: 1;
     height: 48px;
 
     .wide-menu__link{
