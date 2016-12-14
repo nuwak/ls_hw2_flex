@@ -28,16 +28,16 @@
 
   &__content p{
     color: #455a64;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight:400;
     margin-top: 10px;
   }
 }
 
 .avatar-box{
+  $size: 147px;
   border-radius: 50%;
   overflow: hidden;
-  $size: 147px;
   width: $size;
   height: $size;
 }

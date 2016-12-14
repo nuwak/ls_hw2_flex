@@ -1,3 +1,191 @@
 .container__about{
   min-height: 100vh;
 }
+.header{
+  width:100%;
+  min-height:100vh;
+  position: relative;
+}
+.navigation{
+  padding: 30px 30px 60px 30px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-grow:1;
+}
+
+.social-menu{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style:none;
+}
+
+.social-menu__item{
+  width: 32px+25px;
+  padding-right: 25px;
+  &:last-child{
+    padding-right: 0;
+    width: 32px;
+  }
+}
+
+.social-icon_white{
+  line-height: 2rem;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  vertical-align: middle;
+  fill: #fff;
+  fill-opacity: .5;
+
+  &:hover{
+    fill-opacity: 1;
+  }
+}
+
+.content-center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.portfolio-bg{
+  position: absolute;
+  top:0;
+  display: flex;
+  align-items: flex-start;
+  fill: #fff;
+  fill-opacity: 0.2;
+  width: 90%;
+  height: 280px;
+}
+
+.window__title_white{
+  @extend .window__title;
+  color: #fff;
+  text-align: center;
+}
+.window__content_white p{
+  color: #fff;
+  font-size:1rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.mt30{
+  margin-top: 30px;
+}
+
+.corner{
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  width: 100%;
+  svg{
+    flex-grow: 1;
+  }
+
+  &__left{
+    fill:#efeee9;
+  }
+  &__right{
+    fill:#eeebdf;
+  }
+}
+
+.arrow_down{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom:40px;
+  height:40px;
+  a{
+    display: inline-block;
+  }
+  svg{
+    height: 40px;
+    width: 30px;
+    fill: #fff;
+    fill-opacity: .5;
+  }
+}
+
+.about{
+  display: flex;
+  flex-direction:row;
+
+  &__left, &__right{
+    display: flex;
+  }
+
+  &__left{
+    background-color: #efeee9;
+    display: flex;
+    flex-direction: row;
+
+    .about__content{
+      width: 55%;
+      flex-grow: 1;
+      padding: 0 20px 20px 20px;
+    }
+
+    .about__title{
+      flex-grow: 1;
+    }
+  }
+
+  &__right{
+    background-color: #eeebdf;
+    flex-direction:column;
+
+    .ber-h2{
+      margin: 0 auto;
+      width: 60%;
+    }
+  }
+}
+
+.ber-h1{
+  font-family: 'BERNIER';
+  color: #373e42;
+  font-size: 3rem;
+  letter-spacing:5px;
+  text-align: center;
+  &:before, &:after{
+    content: '-';
+    opacity: 0.3;
+  }
+}
+
+.ber-h2{
+  font-size: 2rem;
+  color: #455a64;
+  font-family: 'BERNIER';
+  letter-spacing:5px;
+  text-align: center;
+  &:before, &:after{
+    content: '-';
+    opacity: 0.3;
+  }
+}
+
+h3{
+  font-family: "Roboto";
+  font-size:1.5rem;
+  color:#455a64;
+}
+
+.skills__list{
+  list-style: none;
+  margin:0;
+
+  li{
+    float: left;
+  }
+}

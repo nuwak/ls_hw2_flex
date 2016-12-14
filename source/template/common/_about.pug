@@ -1,3 +1,49 @@
 header.header
     .navigation
-    .avatar-box
+        ul.social-menu
+            each $url, $icon in {'vk':'https://vk.com/mr23423412', 'github':'https://github.com/nuwak', 'in': '123'}
+                li.social-menu__item: a.social-menu__link(href=$url target='_blank')
+                    svg.social-icon_white
+                        use(xlink:href="/assets/img/sprite.svg#" + $icon)
+        .full-menu: a(href='#')
+            svg.social-icon_white
+                use(xlink:href="/assets/img/sprite.svg#hamburger")
+    .content-center
+        svg.portfolio-bg
+            use(xlink:href="/assets/img/sprite.svg#about_header")
+        .avatar-box.mt30
+            img.stretch-img(src="/assets/img/face.jpg")
+        h1.window__title_white Игорь Боженников
+            .window__content_white: p Личный сайт веб разрабодчика
+    .corner
+        svg.corner__left
+            use(xlink:href="/assets/img/sprite.svg#about_bg_left")
+        svg.corner__right
+            use(xlink:href="/assets/img/sprite.svg#about_bg_right")
+    .arrow_down
+        a(href="#")
+            svg
+                use(xlink:href="/assets/img/sprite.svg#arrow_down")
+.about
+    .about__left
+        .about__title
+            h1.ber-h1 Обо мне
+        .about__content
+            img.stretch-img(src="/assets/img/face.jpg")
+            h2.ber-h2 Кто я
+            .about__text
+                p.
+                    Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+                p.
+                    Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+    .about__right
+        .about__content
+            h2.ber-h2 Чем я могу быть вам полезен
+            .about__text.
+                Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачина Backend. Но давайте по порядку.
+        .skills
+            h3 Frontend
+            ul.skills__list
+                li html5
+                li css3
+

@@ -1,5 +1,5 @@
 $fonts_path: '/assets/fonts/';
-$fonts: (
+$font_roboto: (
         Regular 400 normal,
         Bold 700 normal,
         BoldItalic 700 italic,
@@ -10,11 +10,18 @@ $fonts: (
         MediumItalic 500 italic,
 );
 
-@each $font in $fonts{
+@each $font in $font_roboto {
   @font-face {
     font-family: 'Roboto';
     src: url($fonts_path + 'Roboto-'+ nth($font,1) +'.ttf') format('truetype');
     font-weight: nth($font,2);
     font-style: nth($font,3);
   }
+}
+
+@font-face {
+  font-family: 'BERNIER';
+  src: url($fonts_path + 'BERNIERRegular-Regular.otf') format("opentype");
+  font-weight: 400;
+  font-style: normal;
 }
