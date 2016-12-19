@@ -1,0 +1,35 @@
+header.header
+    input#toggle(type='checkbox', style='display:none;')
+    label.toggle-btn.toggle-btn__cross(for='toggle')
+        .bar
+        .bar
+        .bar
+    nav: ul
+        li: a(href='/index.html') Главная
+        li: a(href='/about.html') Обо мне
+        li: a(href='/works.html') Мои работы
+        li: a(href='/blog.html') Блог
+    .navigation
+        ul.social-menu
+            each $url, $icon in {'vk':'https://vk.com/mr23423412', 'github':'https://github.com/nuwak', 'in': '123'}
+                li.social-menu__item: a.social-menu__link(href=$url target='_blank')
+                    svg.social-icon_white
+                        use(xlink:href="/assets/img/sprite.svg#" + $icon)
+        //.full-menu: a(href='#')
+        //    svg.social-icon_white
+        //        use(xlink:href="/assets/img/sprite.svg#hamburger")
+    .content-center
+        svg.portfolio-bg
+            use(xlink:href="/assets/img/sprite.svg#"+header_bg)
+        .avatar-box.mt30
+            img.stretch-img(src="/assets/img/face.jpg")
+        h1.window__title_white Игорь Боженников
+            .window__content_white: p Личный сайт веб разрабодчика
+    .corner
+        svg.corner__traingle(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 1000 85', preserveaspectratio='none')
+            polygon.corner__left(points='0,0   0,86   500.8,86   500.8,75.5')
+            polygon.corner__right(points='1000,0   1000,86   500,86   500,75.5')
+    .arrow_down
+        a(href="#")
+            svg
+                use(xlink:href="/assets/img/sprite.svg#arrow_down")

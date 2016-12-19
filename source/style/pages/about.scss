@@ -87,11 +87,14 @@
   svg{
     flex-grow: 1;
   }
+}
 
-  &__left{
+.page-about{
+  .corner__left{
     fill:#efeee9;
   }
-  &__right{
+
+  .corner__right{
     fill:#eeebdf;
   }
 }
@@ -141,12 +144,6 @@
   &__title{
     flex-grow: 1;
     position: relative;
-    &__bg{
-      fill-opacity: 0.2;
-      position: absolute;
-      top: -25px;
-      width:100%;
-    }
   }
 
   &__title_right{
@@ -162,6 +159,13 @@
       width: 60%;
     }
   }
+}
+
+.title-bg{
+  fill-opacity: 0.1;
+  position: absolute;
+  top: -25px;
+  width:100%;
 }
 
 .ber-h1{

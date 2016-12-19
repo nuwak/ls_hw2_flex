@@ -52,6 +52,12 @@
   }
 }
 
+@mixin block($name){
+  /*==============[ #{$name}  ==============*/
+  @content
+  /*==============  #{$name} ]==============*/
+}
+
 @mixin perimeter($radius){
   stroke-dasharray: ceil($radius * 2 * 3.14159);
 }

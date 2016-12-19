@@ -1,0 +1,17 @@
+.works{
+  background: #faf8f0;
+  height: 500px;
+  position: relative;
+}
+
+.page-works{
+  .corner__left, .corner__right{
+    fill:#faf8f0;
+  }
+}
+
+@include block('works'){
+  .text{
+    color: red;
+  }
+}

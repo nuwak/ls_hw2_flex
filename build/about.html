@@ -15,8 +15,22 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper page-about">
       <header class="header">
+        <input id="toggle" type="checkbox" style="display:none">
+        <label class="toggle-btn toggle-btn__cross" for="toggle">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </label>
+        <nav>
+          <ul>
+            <li><a href="/index.html">Главная</a></li>
+            <li><a href="/about.html">Обо мне</a></li>
+            <li><a href="/works.html">Мои работы</a></li>
+            <li><a href="/blog.html">Блог</a></li>
+          </ul>
+        </nav>
         <div class="navigation">
           <ul class="social-menu">
             <li class="social-menu__item"><a class="social-menu__link" href="https://vk.com/mr23423412" target="_blank">
@@ -32,10 +46,9 @@
                   <use xlink:href="/assets/img/sprite.svg#in"></use>
                 </svg></a></li>
           </ul>
-          <div class="full-menu"><a href="#">
-              <svg class="social-icon_white">
-                <use xlink:href="/assets/img/sprite.svg#hamburger"></use>
-              </svg></a></div>
+          <!--.full-menu: a(href='#')-->
+          <!--    svg.social-icon_white-->
+          <!--        use(xlink:href="/assets/img/sprite.svg#hamburger")-->
         </div>
         <div class="content-center">
           <svg class="portfolio-bg">
@@ -63,14 +76,14 @@
         <div class="about__left">
           <div class="about__title">
             <h1 class="ber-h1">Обо мне</h1>
-            <svg class="about__title__bg">
+            <svg class="title-bg">
               <use xlink:href="/assets/img/sprite.svg#about_header"></use>
             </svg>
           </div>
           <div class="about__content"><img class="stretch-img" src="/assets/img/face.jpg">
             <h2 class="ber-h2">Кто я</h2>
             <div class="about__text">
-              <p>Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.</p>
+              <p>Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.</p>
               <p>Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!</p>
             </div>
           </div>

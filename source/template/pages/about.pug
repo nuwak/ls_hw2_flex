@@ -2,23 +2,12 @@ extends ../_template
 
 block variables
   - var title = 'Обо мне'
+  - var header_bg = 'about_header'
+  - var page = 'page-about'
 
 block content
+  include ../common/_header
   include ../common/_about
 
 block footer
-  footer.footer-about
-    .footer-about__nav
-      ul.footer-about__menu
-        each $url, $name in {'Мои работы' : 'work', 'Обо мне': 'about', 'Блог' : 'blog', 'Авторизация' : 'login'}
-          li: a(href=$url)= $name
-      ul.footer-social
-        each $url, $icon in {'vk_round':'https://vk.com/mr23423412', 'github_round':'https://github.com/nuwak', 'in_round': '123'}
-          li.footer-social__item: a.footer-social__link(href=$url target='_blank')
-            svg.footer-social__icon
-              use(xlink:href="/assets/img/sprite.svg#" + $icon)
-    .footer-about__info
-      .footer-about__about.
-        Я веб-разработчик из Москвы, этот сайт создал я без использования шаблонов.
-      .footer-about__copy.
-        &copy; Боженников Игорь
+  include ../common/_footer

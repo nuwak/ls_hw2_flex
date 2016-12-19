@@ -1,40 +1,15 @@
-header.header
-    .navigation
-        ul.social-menu
-            each $url, $icon in {'vk':'https://vk.com/mr23423412', 'github':'https://github.com/nuwak', 'in': '123'}
-                li.social-menu__item: a.social-menu__link(href=$url target='_blank')
-                    svg.social-icon_white
-                        use(xlink:href="/assets/img/sprite.svg#" + $icon)
-        .full-menu: a(href='#')
-            svg.social-icon_white
-                use(xlink:href="/assets/img/sprite.svg#hamburger")
-    .content-center
-        svg.portfolio-bg
-            use(xlink:href="/assets/img/sprite.svg#about_header")
-        .avatar-box.mt30
-            img.stretch-img(src="/assets/img/face.jpg")
-        h1.window__title_white Игорь Боженников
-            .window__content_white: p Личный сайт веб разрабодчика
-    .corner
-        svg.corner__traingle(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 1000 85', preserveaspectratio='none')
-            polygon.corner__left(points='0,0   0,86   500.8,86   500.8,75.5')
-            polygon.corner__right(points='1000,0   1000,86   500,86   500,75.5')
-    .arrow_down
-        a(href="#")
-            svg
-                use(xlink:href="/assets/img/sprite.svg#arrow_down")
 .about
     .about__left
         .about__title
             h1.ber-h1 Обо мне
-            svg.about__title__bg
+            svg.title-bg
                 use(xlink:href="/assets/img/sprite.svg#about_header")
         .about__content
             img.stretch-img(src="/assets/img/face.jpg")
             h2.ber-h2 Кто я
             .about__text
                 p.
-                    Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+                    Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
                 p.
                     Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
     .about__right

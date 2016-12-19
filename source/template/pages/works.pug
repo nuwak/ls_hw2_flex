@@ -1,0 +1,13 @@
+extends ../_template
+
+block variables
+    - var title = 'Мои работы'
+    - var header_bg = 'works_header'
+    - var page = 'page-works'
+
+block content
+    include ../common/_header
+    include ../content/works
+
+block footer
+    include ../common/_footer
