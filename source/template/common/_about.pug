@@ -16,10 +16,9 @@ header.header
         h1.window__title_white Игорь Боженников
             .window__content_white: p Личный сайт веб разрабодчика
     .corner
-        svg.corner__left
-            use(xlink:href="/assets/img/sprite.svg#about_bg_left")
-        svg.corner__right
-            use(xlink:href="/assets/img/sprite.svg#about_bg_right")
+        svg.corner__traingle(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 1000 85', preserveaspectratio='none')
+            polygon.corner__left(points='0,0   0,86   500.8,86   500.8,75.5')
+            polygon.corner__right(points='1000,0   1000,86   500,86   500,75.5')
     .arrow_down
         a(href="#")
             svg
@@ -28,6 +27,8 @@ header.header
     .about__left
         .about__title
             h1.ber-h1 Обо мне
+            svg.about__title__bg
+                use(xlink:href="/assets/img/sprite.svg#about_header")
         .about__content
             img.stretch-img(src="/assets/img/face.jpg")
             h2.ber-h2 Кто я
@@ -38,12 +39,66 @@ header.header
                     Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
     .about__right
         .about__content
-            h2.ber-h2 Чем я могу быть вам полезен
+            .about__title_right
+                h2.ber-h2 Чем я могу быть вам полезен
             .about__text.
-                Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачина Backend. Но давайте по порядку.
+                Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
         .skills
             h3 Frontend
             ul.skills__list
-                li html5
-                li css3
-
+                li
+                    svg.skills__circles(width='120', height='120')
+                        text(x=60, y=65, text-anchor="middle" font-size="16" fill="#00bfa5") html
+                        +progress(90)
+                    svg.skills__circles(width='120', height='120')
+                        text(x=60, y=65, text-anchor="middle" font-size="16" fill="#00bfa5") css
+                        +progress(80)
+                    svg.skills__circles(width='120', height='120')
+                        text(x=60, y=60, text-anchor="middle" font-size="12" fill="#00bfa5") JavaScript
+                        text(x=60, y=75, text-anchor="middle" font-size="12" fill="#00bfa5") & JQuery
+                        +progress(70)
+            h3 Backend
+            ul.skills__list
+                li
+                    svg.skills__circles(width='120', height='120')
+                        text(x=60, y=65, text-anchor="middle" font-size="16" fill="#00bfa5") PHP
+                        +progress(90)
+                    svg.skills__circles(width='120', height='120')
+                        text(x=60, y=65, text-anchor="middle" font-size="16" fill="#00bfa5") MySQL
+                        +progress(80)
+                    svg.skills__circles(width='120', height='120')
+                        text(x=60, y=60, text-anchor="middle" font-size="14" fill="#00bfa5") Node.js
+                        text(x=60, y=75, text-anchor="middle" font-size="14" fill="#00bfa5") & npm
+                        +progress(70)
+                    svg.skills__circles(width='120', height='120')
+                        text(x=60, y=65, text-anchor="middle" font-size="14" fill="#00bfa5") Mongo.db
+                        +progress(80)
+            h3 WorkFlow
+            ul.skills__list
+                li
+                    svg.skills__circles(width='120', height='120')
+                        text(x=60, y=65, text-anchor="middle" font-size="16" fill="#00bfa5") Git
+                        +progress(90)
+                    svg.skills__circles(width='120', height='120')
+                        text(x=60, y=65, text-anchor="middle" font-size="16" fill="#00bfa5") Gulp
+                        +progress(80)
+                    svg.skills__circles(width='120', height='120')
+                        text(x=60, y=65, text-anchor="middle" font-size="16" fill="#00bfa5") Bower
+                        +progress(80)
+.map
+    script(type='text/javascript', charset='utf-8', async, src='https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=12NnXDWsd7ukihj8ApTbDBm6GaSCP8bg&width=100%25&height=720&lang=ru_RU&sourceType=constructor&scroll=true')
+    .address
+        h2.ber-h2 Контакты
+        ul.address__contacts
+            li.address__item
+                svg.address__icon: use(xlink:href="/assets/img/sprite.svg#skype")
+                a.address__link(href="#") mr.1gor
+            li.address__item
+                svg.address__icon: use(xlink:href="/assets/img/sprite.svg#envelope")
+                a.address__link(href="#") mr.igorr@gmail.com
+            li.address__item
+                svg.address__icon: use(xlink:href="/assets/img/sprite.svg#phone")
+                span +7(968)825 60 43
+            li.address__item
+                svg.address__icon: use(xlink:href="/assets/img/sprite.svg#map_marker")
+                span г. Москва, Алтуфьевское ш. 56

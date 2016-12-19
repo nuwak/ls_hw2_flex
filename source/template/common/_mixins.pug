@@ -1,0 +1,3 @@
+mixin progress(percent)
+        circle.skills__circle(r='45', cx='60', cy='60')
+        circle.skills__progress(r='45', cx='60', cy='60', transform="rotate(-90 60 60)" stroke-dashoffset=45 * 2 * 3.14159 / 100 * (100 - percent), stroke-opacity=percent/100)

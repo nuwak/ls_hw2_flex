@@ -49,11 +49,9 @@
           </h1>
         </div>
         <div class="corner">
-          <svg class="corner__left">
-            <use xlink:href="/assets/img/sprite.svg#about_bg_left"></use>
-          </svg>
-          <svg class="corner__right">
-            <use xlink:href="/assets/img/sprite.svg#about_bg_right"></use>
+          <svg class="corner__traingle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none">
+            <polygon class="corner__left" points="0,0   0,86   500.8,86   500.8,75.5"></polygon>
+            <polygon class="corner__right" points="1000,0   1000,86   500,86   500,75.5"></polygon>
           </svg>
         </div>
         <div class="arrow_down"><a href="#">
@@ -65,6 +63,9 @@
         <div class="about__left">
           <div class="about__title">
             <h1 class="ber-h1">Обо мне</h1>
+            <svg class="about__title__bg">
+              <use xlink:href="/assets/img/sprite.svg#about_header"></use>
+            </svg>
           </div>
           <div class="about__content"><img class="stretch-img" src="/assets/img/face.jpg">
             <h2 class="ber-h2">Кто я</h2>
@@ -76,19 +77,138 @@
         </div>
         <div class="about__right">
           <div class="about__content">
-            <h2 class="ber-h2">Чем я могу быть вам полезен</h2>
-            <div class="about__text">Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачина Backend. Но давайте по порядку.</div>
+            <div class="about__title_right">
+              <h2 class="ber-h2">Чем я могу быть вам полезен</h2>
+            </div>
+            <div class="about__text">Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.</div>
           </div>
           <div class="skills">
             <h3>Frontend</h3>
             <ul class="skills__list">
-              <li>html5</li>
-              <li>css3</li>
+              <li>
+                <svg class="skills__circles" width="120" height="120">
+                  <text x="60" y="65" text-anchor="middle" font-size="16" fill="#00bfa5">html</text>
+                  <circle class="skills__circle" r="45" cx="60" cy="60"></circle>
+                  <circle class="skills__progress" r="45" cx="60" cy="60" transform="rotate(-90 60 60)" stroke-dashoffset="28.27431" stroke-opacity="0.9"></circle>
+                </svg>
+                <svg class="skills__circles" width="120" height="120">
+                  <text x="60" y="65" text-anchor="middle" font-size="16" fill="#00bfa5">css</text>
+                  <circle class="skills__circle" r="45" cx="60" cy="60"></circle>
+                  <circle class="skills__progress" r="45" cx="60" cy="60" transform="rotate(-90 60 60)" stroke-dashoffset="56.54862" stroke-opacity="0.8"></circle>
+                </svg>
+                <svg class="skills__circles" width="120" height="120">
+                  <text x="60" y="60" text-anchor="middle" font-size="12" fill="#00bfa5">JavaScript</text>
+                  <text x="60" y="75" text-anchor="middle" font-size="12" fill="#00bfa5">& JQuery</text>
+                  <circle class="skills__circle" r="45" cx="60" cy="60"></circle>
+                  <circle class="skills__progress" r="45" cx="60" cy="60" transform="rotate(-90 60 60)" stroke-dashoffset="84.82293" stroke-opacity="0.7"></circle>
+                </svg>
+              </li>
+            </ul>
+            <h3>Backend</h3>
+            <ul class="skills__list">
+              <li>
+                <svg class="skills__circles" width="120" height="120">
+                  <text x="60" y="65" text-anchor="middle" font-size="16" fill="#00bfa5">PHP</text>
+                  <circle class="skills__circle" r="45" cx="60" cy="60"></circle>
+                  <circle class="skills__progress" r="45" cx="60" cy="60" transform="rotate(-90 60 60)" stroke-dashoffset="28.27431" stroke-opacity="0.9"></circle>
+                </svg>
+                <svg class="skills__circles" width="120" height="120">
+                  <text x="60" y="65" text-anchor="middle" font-size="16" fill="#00bfa5">MySQL</text>
+                  <circle class="skills__circle" r="45" cx="60" cy="60"></circle>
+                  <circle class="skills__progress" r="45" cx="60" cy="60" transform="rotate(-90 60 60)" stroke-dashoffset="56.54862" stroke-opacity="0.8"></circle>
+                </svg>
+                <svg class="skills__circles" width="120" height="120">
+                  <text x="60" y="60" text-anchor="middle" font-size="14" fill="#00bfa5">Node.js</text>
+                  <text x="60" y="75" text-anchor="middle" font-size="14" fill="#00bfa5">& npm</text>
+                  <circle class="skills__circle" r="45" cx="60" cy="60"></circle>
+                  <circle class="skills__progress" r="45" cx="60" cy="60" transform="rotate(-90 60 60)" stroke-dashoffset="84.82293" stroke-opacity="0.7"></circle>
+                </svg>
+                <svg class="skills__circles" width="120" height="120">
+                  <text x="60" y="65" text-anchor="middle" font-size="14" fill="#00bfa5">Mongo.db</text>
+                  <circle class="skills__circle" r="45" cx="60" cy="60"></circle>
+                  <circle class="skills__progress" r="45" cx="60" cy="60" transform="rotate(-90 60 60)" stroke-dashoffset="56.54862" stroke-opacity="0.8"></circle>
+                </svg>
+              </li>
+            </ul>
+            <h3>WorkFlow</h3>
+            <ul class="skills__list">
+              <li>
+                <svg class="skills__circles" width="120" height="120">
+                  <text x="60" y="65" text-anchor="middle" font-size="16" fill="#00bfa5">Git</text>
+                  <circle class="skills__circle" r="45" cx="60" cy="60"></circle>
+                  <circle class="skills__progress" r="45" cx="60" cy="60" transform="rotate(-90 60 60)" stroke-dashoffset="28.27431" stroke-opacity="0.9"></circle>
+                </svg>
+                <svg class="skills__circles" width="120" height="120">
+                  <text x="60" y="65" text-anchor="middle" font-size="16" fill="#00bfa5">Gulp</text>
+                  <circle class="skills__circle" r="45" cx="60" cy="60"></circle>
+                  <circle class="skills__progress" r="45" cx="60" cy="60" transform="rotate(-90 60 60)" stroke-dashoffset="56.54862" stroke-opacity="0.8"></circle>
+                </svg>
+                <svg class="skills__circles" width="120" height="120">
+                  <text x="60" y="65" text-anchor="middle" font-size="16" fill="#00bfa5">Bower</text>
+                  <circle class="skills__circle" r="45" cx="60" cy="60"></circle>
+                  <circle class="skills__progress" r="45" cx="60" cy="60" transform="rotate(-90 60 60)" stroke-dashoffset="56.54862" stroke-opacity="0.8"></circle>
+                </svg>
+              </li>
             </ul>
           </div>
         </div>
       </div>
-      <footer class="footer">test</footer>
+      <div class="map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=12NnXDWsd7ukihj8ApTbDBm6GaSCP8bg&amp;width=100%25&amp;height=720&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+        <div class="address">
+          <h2 class="ber-h2">Контакты</h2>
+          <ul class="address__contacts">
+            <li class="address__item">
+              <svg class="address__icon">
+                <use xlink:href="/assets/img/sprite.svg#skype"></use>
+              </svg><a class="address__link" href="#">mr.1gor</a>
+            </li>
+            <li class="address__item">
+              <svg class="address__icon">
+                <use xlink:href="/assets/img/sprite.svg#envelope"></use>
+              </svg><a class="address__link" href="#">mr.igorr@gmail.com</a>
+            </li>
+            <li class="address__item">
+              <svg class="address__icon">
+                <use xlink:href="/assets/img/sprite.svg#phone"></use>
+              </svg><span>+7(968)825 60 43</span>
+            </li>
+            <li class="address__item">
+              <svg class="address__icon">
+                <use xlink:href="/assets/img/sprite.svg#map_marker"></use>
+              </svg><span>г. Москва, Алтуфьевское ш. 56</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <footer class="footer-about">
+        <div class="footer-about__nav">
+          <ul class="footer-about__menu">
+            <li><a href="work">Мои работы</a></li>
+            <li><a href="about">Обо мне</a></li>
+            <li><a href="blog">Блог</a></li>
+            <li><a href="login">Авторизация</a></li>
+          </ul>
+          <ul class="footer-social">
+            <li class="footer-social__item"><a class="footer-social__link" href="https://vk.com/mr23423412" target="_blank">
+                <svg class="footer-social__icon">
+                  <use xlink:href="/assets/img/sprite.svg#vk_round"></use>
+                </svg></a></li>
+            <li class="footer-social__item"><a class="footer-social__link" href="https://github.com/nuwak" target="_blank">
+                <svg class="footer-social__icon">
+                  <use xlink:href="/assets/img/sprite.svg#github_round"></use>
+                </svg></a></li>
+            <li class="footer-social__item"><a class="footer-social__link" href="123" target="_blank">
+                <svg class="footer-social__icon">
+                  <use xlink:href="/assets/img/sprite.svg#in_round"></use>
+                </svg></a></li>
+          </ul>
+        </div>
+        <div class="footer-about__info">
+          <div class="footer-about__about">Я веб-разработчик из Москвы, этот сайт создал я без использования шаблонов.</div>
+          <div class="footer-about__copy">&copy; Боженников Игорь</div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

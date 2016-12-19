@@ -122,22 +122,35 @@
 
   &__left, &__right{
     display: flex;
+    padding-bottom:30px;
+    width: 50%;
   }
 
   &__left{
     background-color: #efeee9;
     display: flex;
     flex-direction: row;
+  }
 
-    .about__content{
-      width: 55%;
-      flex-grow: 1;
-      padding: 0 20px 20px 20px;
-    }
+  &__content{
+    width: 55%;
+    flex-grow: 1;
+    padding: 0 20px 20px 20px;
+  }
 
-    .about__title{
-      flex-grow: 1;
+  &__title{
+    flex-grow: 1;
+    position: relative;
+    &__bg{
+      fill-opacity: 0.2;
+      position: absolute;
+      top: -25px;
+      width:100%;
     }
+  }
+
+  &__title_right{
+    width: 500px;
   }
 
   &__right{
@@ -182,10 +195,136 @@ h3{
 }
 
 .skills__list{
-  list-style: none;
-  margin:0;
+  @include ul_menu;
+  @include clearfix;
 
   li{
     float: left;
+
   }
 }
+
+.skills__circles{
+  .skills__circle{
+    fill: none;
+    stroke-width: 20;
+    stroke: #dfdcd5;
+  }
+
+  .skills__progress {
+    $radius: 45;
+    stroke-width: 20;
+    @include perimeter($radius);
+    transition: all 1s;
+    stroke: #10c1a8;
+    fill:none;
+  }
+
+}
+
+.footer-about{
+  height: 115px;
+  width: 100%;
+  padding: 30px 0 20px 0;
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-about__nav{
+  padding: 0 30px 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom:1px solid #939a9d;
+}
+
+.footer-about__info{
+  padding: 10px 30px 0 30px;
+  display: flex;
+  justify-content: space-between;
+  color: #d9dfe2;
+  font-weight:300;
+}
+
+.footer-about__menu{
+  @include ul_menu;
+  li a{
+    color: #fff;
+  }
+  li{
+    padding-left:35px;
+    &:first-child{
+      padding-left: 0;
+    }
+  }
+}
+
+.footer-social{
+  @include ul_menu;
+}
+
+.footer-social__item{
+  width: 32px+25px;
+  padding-right: 25px;
+  &:last-child{
+    padding-right: 0;
+    width: 32px;
+  }
+}
+
+.footer-social__icon{
+  line-height: 2rem;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  vertical-align: middle;
+  fill: #fff;
+  fill-rule: evenodd;
+  fill-opacity: 0.5;
+
+  &:hover{
+    fill-opacity: 1;
+  }
+}
+.map{
+  position: relative;
+}
+@mixin address{
+  $text_color: #455a64;
+
+  .address{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    margin:0 auto;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    padding: 0 40px;
+  }
+
+  .address__contacts{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: $text_color;
+  }
+  .address__item{
+    padding-bottom: 25px;
+  }
+  .address__icon{
+    margin-right:10px;
+    width: 25px;
+    height: 25px;
+    fill: #00bea4;
+    float: left;
+  }
+  .address__link{
+    text-decoration: none;
+    color: $text_color;
+  }
+}
+@include address;
+
+

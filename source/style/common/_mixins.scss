@@ -10,6 +10,18 @@
   }
 }
 
+@mixin ul_menu{
+  list-style: none;
+  margin:0;
+  padding:0;
+  li{
+    float: left;
+    a{
+      text-decoration: none;
+    }
+  }
+}
+
 @mixin full-hd{
   @media (max-width: 1920px) {
     @content;
@@ -38,4 +50,12 @@
   @media (max-width: 480px) {
     @content;
   }
+}
+
+@mixin perimeter($radius){
+  stroke-dasharray: ceil($radius * 2 * 3.14159);
+}
+
+@mixin skill($radius, $percent){
+  stroke-dashoffset: ceil($radius * 2 * 3.14159 / 100 * (100 - $percent));
 }
